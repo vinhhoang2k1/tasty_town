@@ -19,10 +19,9 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/cart_food_item_thumbnail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:id="@+id/cart_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 app:srcCompat="@drawable/burger_fries" />
 
             <LinearLayout

@@ -50,7 +50,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         TextView foodNameV, priceV;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageV = itemView.findViewById(R.id.cart_food_item_thumbnail);
+            imageV = itemView.findViewById(R.id.cart_img);
             foodNameV = itemView.findViewById(R.id.tvFoodName);
             priceV = itemView.findViewById(R.id.tvFoodPrice);
         }

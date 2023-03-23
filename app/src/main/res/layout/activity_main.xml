@@ -13,7 +13,6 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingHorizontal="10dp"
-        android:paddingTop="10dp"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="10dp">
 
@@ -22,7 +21,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/back_icon" />
+            app:srcCompat="@drawable/back_icon_black" />
 
         <TextView
             android:id="@+id/textView8"
@@ -284,7 +283,9 @@
             android:layout_height="match_parent"
             android:background="@color/primary"
             app:menu="@menu/bottom_nav_menu"
-            tools:layout_editor_absoluteX="16dp" />
+            tools:layout_editor_absoluteX="16dp"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -292,12 +293,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:src="@drawable/house_icon"
+        android:src="@drawable/cart_icon"
         app:layout_anchor="@id/bottom_app"
         app:layout_constraintBottom_toBottomOf="@+id/bottom_app"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/white"
+        app:borderWidth="0dp"
+        app:tint="@color/primary"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

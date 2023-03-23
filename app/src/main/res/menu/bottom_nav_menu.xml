@@ -7,7 +7,7 @@
         android:title="Home"
        />
     <item                             
-        android:icon="@drawable/house_icon"
+        android:icon="@drawable/heart_icon"
         android:title="Search"/>
 
     <item
@@ -16,10 +16,10 @@
 
     <item
         android:id="@+id/person"
-        android:icon="@drawable/house_icon"
+        android:icon="@drawable/chat_icon"
         android:title="Profile"/>
     <item
         android:id="@+id/settings"
-        android:icon="@drawable/house_icon"
+        android:icon="@drawable/people_icon"
         android:title="Settings"/>
 </menu>

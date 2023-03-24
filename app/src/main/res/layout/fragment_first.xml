@@ -9,48 +9,12 @@
    <androidx.constraintlayout.widget.ConstraintLayout
        android:layout_width="match_parent"
        android:layout_height="match_parent">
-       <LinearLayout
-           android:id="@+id/linearLayout3"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:gravity="center"
-           android:orientation="horizontal"
-           android:paddingHorizontal="10dp"
-           tools:layout_editor_absoluteX="10dp"
-           tools:layout_editor_absoluteY="10dp">
-
-           <ImageView
-               android:id="@+id/imageView7"
-               android:layout_width="20dp"
-               android:layout_height="20dp"
-               android:layout_weight="1"
-               app:srcCompat="@drawable/back_icon_black" />
-
-           <TextView
-               android:id="@+id/textView8"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="5dp"
-               android:layout_weight="4"
-               android:text="Find your favorite meal"
-               android:textColor="@color/black"
-               android:textSize="25sp"
-               android:textStyle="bold" />
-
-           <ImageView
-               android:id="@+id/imageView8"
-               android:layout_width="30dp"
-               android:layout_height="35dp"
-               android:layout_weight="1"
-               app:srcCompat="@drawable/bell_icon" />
-
-       </LinearLayout>
        <ScrollView
            android:id="@+id/scrollView2"
            android:layout_width="match_parent"
            android:layout_height="match_parent"
-           android:paddingHorizontal="10dp"
-           android:layout_marginTop="50dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginHorizontal="10dp"
            app:layout_constraintBottom_toBottomOf="parent"
            tools:layout_editor_absoluteX="16dp"
           >

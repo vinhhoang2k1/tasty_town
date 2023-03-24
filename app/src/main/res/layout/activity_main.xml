@@ -6,17 +6,39 @@
     android:layout_height="match_parent"
     tools:context=".Activity.MainActivity">
 
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/headAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:contentInsetStart="0dp"
+        app:fabCradleMargin="10dp"
+        app:fabCradleRoundedCornerRadius="10dp"
+        app:fabCradleVerticalOffset="10dp"
+        tools:ignore="BottomAppBar">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/headerNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/transparent_background"
+            app:itemIconTint="@color/black"
+            app:itemTextColor="@color/black"
+            app:menu="@menu/top_control_menu"
+            tools:layout_editor_absoluteX="16dp" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
     <FrameLayout
         android:id="@+id/flFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_app"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/headAppBar"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_app"
@@ -40,22 +62,5 @@
             app:itemIconTint="@color/white"
             app:itemTextColor="@color/white"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/cart_icon"
-        app:layout_anchor="@id/bottom_app"
-        app:layout_constraintBottom_toBottomOf="@+id/bottom_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        android:backgroundTint="@color/white"
-        app:borderWidth="0dp"
-        app:tint="@color/primary"
-        />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

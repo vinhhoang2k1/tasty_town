@@ -2,24 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/home_menu"
         android:icon="@drawable/house_icon"
         android:title="Home"
        />
-    <item                             
+    <item
+        android:id="@+id/favorite_menu"
         android:icon="@drawable/heart_icon"
-        android:title="Search"/>
+        android:title="Favorite"/>
 
     <item
         android:id="@+id/placeholder"
+        android:icon="@drawable/heart_icon"
+Go
         android:title="Cart"/>
 
     <item
-        android:id="@+id/person"
+        android:id="@+id/chat_menu"
         android:icon="@drawable/chat_icon"
-        android:title="Profile"/>
+        android:title="Chat"/>
     <item
-        android:id="@+id/settings"
+        android:id="@+id/profile_menu"
         android:icon="@drawable/people_icon"
-        android:title="Settings"/>
+        android:title="Profile"/>
 </menu>

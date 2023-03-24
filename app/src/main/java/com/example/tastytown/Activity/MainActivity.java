@@ -1,107 +1,62 @@
 package com.example.tastytown.Activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.GridView;
+import android.view.MenuItem;
+import android.view.View;
 
-import com.example.tastytown.Adaptor.MainDisherAdaptor;
-import com.example.tastytown.Model.Food;
+import com.example.tastytown.FifFragment;
+import com.example.tastytown.FirstFragment;
+import com.example.tastytown.FourFragment;
 import com.example.tastytown.R;
+import com.example.tastytown.SecondFragment;
+import com.example.tastytown.ThirdFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
-    RecyclerView mainDishers, salads, fastFoods, fruits;
-    RecyclerView.Adapter adapter;
-
+public class MainActivity extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener {
+    BottomNavigationView bottomNavigationView;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        renderMainDisher();
-        renderFastFood();
-        renderSalad();
-        renderFruit();
+        bottomNavigationView = findViewById(R.id.bottomNavigationViewApp);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setSelectedItemId(R.id.home_menu);
     }
 
-    private void renderMainDisher() {
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        mainDishers = findViewById(R.id.main_disher_grid);
-        mainDishers.setLayoutManager(linearLayoutManager);
-        ArrayList<Food> listMainDisher = new ArrayList<>();
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        listMainDisher.add(new Food("main_disher__img_1"));
-        adapter = new MainDisherAdaptor(listMainDisher);
-        mainDishers.setAdapter(adapter);
-    }
-    private void renderFastFood() {
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        fastFoods = findViewById(R.id.fast_food_list);
-        fastFoods.setLayoutManager(linearLayoutManager);
-        ArrayList<Food> listFastFood = new ArrayList<>();
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        listFastFood.add(new Food("main_disher__img_1"));
-        adapter = new MainDisherAdaptor(listFastFood);
-        fastFoods.setAdapter(adapter);
-    }
-    private void renderSalad() {
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        salads = findViewById(R.id.salad_list);
-        salads.setLayoutManager(linearLayoutManager);
-        ArrayList<Food> listSalad = new ArrayList<>();
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        listSalad.add(new Food("main_disher__img_1"));
-        adapter = new MainDisherAdaptor(listSalad);
-        salads.setAdapter(adapter);
-    }
-    private void renderFruit() {
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        fruits = findViewById(R.id.fruit_list);
-        fruits.setLayoutManager(linearLayoutManager);
-        ArrayList<Food> listFruit = new ArrayList<>();
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        listFruit.add(new Food("main_disher__img_1"));
-        adapter = new MainDisherAdaptor(listFruit);
-        fruits.setAdapter(adapter);
-    }
+    FirstFragment firstFragment = new FirstFragment();
+    SecondFragment secondFragment = new SecondFragment();
 
+    ThirdFragment thirdFragment = new ThirdFragment();
 
+    FourFragment fourFragment = new FourFragment();
 
+    FifFragment fifFragment = new FifFragment();
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.home_menu:
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, firstFragment).commit();
+                return true;
+            case R.id.favorite_menu:
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, secondFragment).commit();
+                return true;
+            case R.id.cart_menu:
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, thirdFragment).commit();
+                return true;
+            case R.id.chat_menu:
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fourFragment).commit();
+                return true;
+            case R.id.profile_menu:
+                getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, fifFragment).commit();
+                return true;
+        }
+        return false;
+    }
 }

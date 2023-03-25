@@ -35,6 +35,12 @@ public class ThirdFragment extends Fragment {
         listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
         listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
         listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
+        listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
+        listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
+        listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
+        listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
+        listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
+        listFood.add(new Food("Burger", 20, "Delicous", "food_img_2"));
         adapter = new CartAdapter(listFood);
         recyclerFavoriteFood.setAdapter(adapter);
         recyclerFavoriteFood.setItemAnimator(new DefaultItemAnimator());

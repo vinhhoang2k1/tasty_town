@@ -16,13 +16,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/border_food_cart_item"
+            android:padding="2dp"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/cart_img"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/burger_fries" />
+            <LinearLayout
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cart_img"
+                    android:layout_width="74dp"
+                    android:layout_height="75dp"
+                    android:layout_weight="1"
+                    android:foreground="@drawable/cirle_layout"
+                    android:orientation="vertical"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/food_img_2" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -58,38 +73,39 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="right"
-                    android:text="TextView" />
+                    android:text="4.00pm" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
-                    <Button
-                        android:id="@+id/btnDecrease"
-                        android:layout_width="40dp"
-                        android:layout_height="wrap_content"
-                        android:text="-"
-                        android:textAlignment="center"
-                        android:textColor="@color/black" />
+                    <ImageView
+                        android:id="@+id/imageView21"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circle_bg_primary"
+                        android:paddingVertical="10dp"
+                        app:srcCompat="@drawable/remove_primary_color_icon" />
 
                     <TextView
                         android:id="@+id/tvFoodQuantity"
-                        android:layout_width="20dp"
+                        android:layout_width="30dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="6"
                         android:text="0"
                         android:textAlignment="center" />
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="40dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:width="30dp"
-                        android:backgroundTint="@color/primary"
-                        android:text="+"
-                        android:textColor="@color/white" />
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/circle_bg_primary_bold"
+                        android:paddingVertical="10dp"
+                        app:srcCompat="@drawable/add_primary_color_icon"
+                        app:tint="@color/white" />
+
                 </LinearLayout>
             </LinearLayout>
 

@@ -8,8 +8,8 @@
        />
     <item
         android:id="@+id/favorite_menu"
-        android:icon="@drawable/heart_icon"
-        android:title="Favorite"/>
+        android:icon="@drawable/list_food"
+        android:title="Tastys"/>
 
     <item
         android:id="@+id/cart_menu"
@@ -18,8 +18,8 @@
 
     <item
         android:id="@+id/chat_menu"
-        android:icon="@drawable/chat_icon"
-        android:title="Chat"/>
+        android:icon="@drawable/heart_icon"
+        android:title="Favorite"/>
     <item
         android:id="@+id/profile_menu"
         android:icon="@drawable/people_icon"

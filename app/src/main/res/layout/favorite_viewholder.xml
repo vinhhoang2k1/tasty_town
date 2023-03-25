@@ -6,20 +6,23 @@
     android:layout_height="wrap_content">
 
     <LinearLayout
+        android:id="@+id/favorite_item_wrap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="20dp">
+        android:paddingHorizontal="10dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp">
 
         <ImageView
             android:id="@+id/favorite_item_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/rounded_corners"
-            android:scaleType="centerCrop"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            android:padding="0dp"
+            android:foreground="@drawable/cirle_layout"
+            android:orientation="vertical"
             app:srcCompat="@drawable/food_img_2" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -44,7 +47,6 @@
                 android:id="@+id/textView26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
                 android:text="$"
                 android:textColor="@color/black"
                 android:textSize="25sp"
@@ -68,6 +70,8 @@
             android:id="@+id/imageView20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="@drawable/circle_bg_primary"
             app:srcCompat="@drawable/heart_icon_primary_color" />
     </LinearLayout>
 

@@ -8,7 +8,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="-7dp"
         tools:layout_editor_absoluteY="13dp">
@@ -16,10 +15,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_food_cart_item"
-            android:padding="2dp"
             android:layout_marginBottom="5dp"
-            android:orientation="horizontal">
+            android:background="@drawable/border_food_cart_item"
+            android:orientation="horizontal"
+            android:padding="2dp">
 
             <LinearLayout
                 android:layout_width="75dp"

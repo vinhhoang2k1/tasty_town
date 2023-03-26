@@ -22,6 +22,8 @@ public class FirstFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
         View rootView = inflater.inflate(R.layout.fragment_first, container, false);
         RecyclerView recyclerMainDisher = (RecyclerView) rootView.findViewById(R.id.main_disher_grid);
         recyclerMainDisher.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));

@@ -2,9 +2,7 @@ package com.example.tastytown.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -13,6 +11,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.example.tastytown.Helper.ManagerCart;
+import com.example.tastytown.Helper.MangerFavorite;
 import com.example.tastytown.Model.Food;
 import com.example.tastytown.R;
 
@@ -24,14 +24,43 @@ public class DetailFoodActivity extends AppCompatActivity {
     int countOrder = 1;
 
     private Food foodobject;
+    private ManagerCart managerCart;
+    private MangerFavorite mangerFavorite;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_food);
+        managerCart = new ManagerCart(this);
+        mangerFavorite = new MangerFavorite(this);
+
+
         initView();
         getBundle();
+        renderFavoriteView();
+        favoriteFoodBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mangerFavorite.toggleFavorite(foodobject);
+                renderFavoriteView();
+            }
+        });
+
+    }
+
+    private void renderFavoriteView() {
+        if(mangerFavorite.getIsExistFavorite(foodobject) == false){
+            int drawableResourseid = this.getResources().getIdentifier(String.valueOf(R.drawable.heart_icon), "drawable", this.getPackageName());
+             Glide.with(this)
+                .load(drawableResourseid)
+                .into(favoriteFoodBtn);
+        } else {
+        int drawableResourseid = this.getResources().getIdentifier(String.valueOf(R.drawable.heart_icon_primary_color), "drawable", this.getPackageName());
+            Glide.with(this)
+                .load(drawableResourseid)
+                .into(favoriteFoodBtn);
+        };
 
     }
 
@@ -44,7 +73,7 @@ public class DetailFoodActivity extends AppCompatActivity {
         descriptionFoodView = findViewById(R.id.food_detail_description);
         currentOrderView = findViewById(R.id.food_detail_current_order);
         priceFoodView = findViewById(R.id.food_detail_price);
-        addToCartBtn = findViewById(R.id.btnConfirm);
+        addToCartBtn = findViewById(R.id.btnConfirmOrder);
         backBtn = findViewById(R.id.food_detail_back_btn);
     }
 
@@ -80,6 +109,15 @@ public class DetailFoodActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 DetailFoodActivity.this.finish();
+            }
+        });
+
+//        add to cart
+        addToCartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                foodobject.setNumberInCard(countOrder);
+                managerCart.insertFood(foodobject);
             }
         });
     }

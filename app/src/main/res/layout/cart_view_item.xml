@@ -82,7 +82,7 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/imageView21"
+                        android:id="@+id/cart_minus_btn"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/circle_bg_primary"
@@ -97,7 +97,7 @@
                         android:textAlignment="center" />
 
                     <ImageView
-                        android:id="@+id/imageView19"
+                        android:id="@+id/cart_plus_btn"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:background="@drawable/circle_bg_primary_bold"

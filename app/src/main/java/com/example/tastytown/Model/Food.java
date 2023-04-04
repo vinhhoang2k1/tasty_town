@@ -7,6 +7,16 @@ public class Food implements Serializable {
     public int price;
     public String description;
     private String image;
+    private int numberInCard;
+
+    public int getNumberInCard() {
+        return numberInCard;
+    }
+
+    public void setNumberInCard(int numberInCard) {
+        this.numberInCard = numberInCard;
+    }
+
     public Food(String image) {
         this.image = image;
     }

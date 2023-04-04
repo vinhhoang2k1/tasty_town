@@ -33,7 +33,6 @@ public class CartActivity extends AppCompatActivity {
         ArrayList<Food> cartList = new ArrayList<>();
         cartList.add(new Food("Burger", 30, "Delicous", "food_img_2"));
         cartList.add(new Food("Burger", 20, "Delicous", "food_img_2"));
-        adapter = new CartAdapter(cartList);
         listViewCart.setAdapter(adapter);
     }
 }

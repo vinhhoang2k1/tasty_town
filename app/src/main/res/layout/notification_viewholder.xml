@@ -19,7 +19,7 @@
         android:gravity="center"
         android:orientation="vertical">
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/notifi_thumbnail"
             android:layout_width="69dp"
             android:layout_height="69dp"
             android:layout_weight="1"

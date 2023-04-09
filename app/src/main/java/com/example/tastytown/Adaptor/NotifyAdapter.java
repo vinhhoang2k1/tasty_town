@@ -1,5 +1,6 @@
 package com.example.tastytown.Adaptor;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,17 +11,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.tastytown.Model.Notifi;
+import com.example.tastytown.Model.Notify;
 import com.example.tastytown.R;
 
 import java.util.ArrayList;
 
-public class NotifiAdapter extends RecyclerView.Adapter<NotifiAdapter.ViewHolder> {
+public class NotifyAdapter extends RecyclerView.Adapter<NotifyAdapter.ViewHolder> {
 
-    private ArrayList<Notifi> listNotifi;
+    private ArrayList<Notify> listNotify;
 
-    public NotifiAdapter(ArrayList<Notifi> listFoodCart) {
-        this.listNotifi = listNotifi;
+    public NotifyAdapter(ArrayList<Notify> listNotify) {
+        this.listNotify = listNotify;
     }
 
     @NonNull
@@ -31,11 +32,12 @@ public class NotifiAdapter extends RecyclerView.Adapter<NotifiAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NotifiAdapter.ViewHolder holder, int position) {
-        holder.shopNameV.setText(listNotifi.get(position).getShopName());
-        holder.messageV.setText(listNotifi.get(position).getMessage());
-        holder.timeV.setText(listNotifi.get(position).getTime());
-        int drawResourseId = holder.itemView.getContext().getResources().getIdentifier(listNotifi.get(position).getImage(), "drawable", holder.itemView.getContext().getPackageName());
+    public void onBindViewHolder(@NonNull NotifyAdapter.ViewHolder holder, int position) {
+        holder.shopNameV.setText(listNotify.get(position).getShopName());
+        holder.messageV.setText(listNotify.get(position).getMessage());
+        holder.timeV.setText(listNotify.get(position).getTime());
+        Log.e("notifi apdapter", holder.imageV.toString());
+        int drawResourseId = holder.itemView.getContext().getResources().getIdentifier(listNotify.get(position).getThumbnail(), "drawable", holder.itemView.getContext().getPackageName());
         Glide.with(holder.itemView.getContext())
                 .load(drawResourseId)
                 .into(holder.imageV);
@@ -43,7 +45,7 @@ public class NotifiAdapter extends RecyclerView.Adapter<NotifiAdapter.ViewHolder
 
     @Override
     public int getItemCount() {
-        return listNotifi.size();
+        return listNotify.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

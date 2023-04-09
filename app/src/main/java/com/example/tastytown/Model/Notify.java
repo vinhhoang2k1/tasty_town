@@ -1,12 +1,12 @@
 package com.example.tastytown.Model;
 
-public class Notifi {
+public class Notify {
     private String shopName;
     public String time;
     public String message;
     private String thumbnail;
 
-    public Notifi(String shopName, String time, String message, String thumbnail) {
+    public Notify(String shopName, String time, String message, String thumbnail) {
         this.shopName = shopName;
         this.time = time;
         this.message = message;
@@ -37,11 +37,11 @@ public class Notifi {
         this.message = message;
     }
 
-    public String getImage() {
+    public String getThumbnail() {
         return thumbnail;
     }
 
-    public void setImage(String thumbnail) {
+    public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
     }
 }

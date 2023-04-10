@@ -28,8 +28,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener {
     BottomNavigationView bottomNavigationView;
-    ImageView headCurrentIcon;
+    ImageView headCurrentIcon, notificationBtn;
     TextView headCurrentName;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,15 @@ public class MainActivity extends AppCompatActivity  implements BottomNavigation
         bottomNavigationView.setSelectedItemId(R.id.home_menu);
         headCurrentName = findViewById(R.id.main_head_current_name);
         headCurrentIcon = findViewById(R.id.main_head_current_icon);
+        notificationBtn = findViewById(R.id.notification_btn);
+
+        notificationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NotifyActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

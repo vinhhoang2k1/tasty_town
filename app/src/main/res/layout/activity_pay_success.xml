@@ -27,7 +27,7 @@
             app:srcCompat="@drawable/text_thank_you_payment" />
 
         <TextView
-            android:id="@+id/btnOrder"
+            android:id="@+id/btnOrderBackToHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/radius_layout"

@@ -35,12 +35,12 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/notification_btn"
             android:layout_width="20dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:tint="@color/black"
-            app:srcCompat="@drawable/bell_icon" />
+            app:srcCompat="@drawable/bell_icon"
+            app:tint="@color/black" />
     </LinearLayout>
 
     <FrameLayout

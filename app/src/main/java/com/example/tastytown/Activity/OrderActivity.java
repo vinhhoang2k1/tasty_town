@@ -1,6 +1,8 @@
 package com.example.tastytown.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,8 +11,9 @@ import com.example.tastytown.Helper.ManagerCart;
 import com.example.tastytown.R;
 
 public class OrderActivity extends AppCompatActivity {
-    TextView tvSubtotalPrice, tvDelivery, tvDiscountPrice, tvTotalPrice;
+    TextView tvSubtotalPrice, tvDelivery, tvDiscountPrice, tvTotalPrice, btnOrder;
     ManagerCart managerCart;
+
     double tax;
 
     @Override
@@ -20,6 +23,14 @@ public class OrderActivity extends AppCompatActivity {
         managerCart = new ManagerCart(this);
         initView();
         getFee();
+
+        btnOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(OrderActivity.this, PaySuccessActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void initView() {
@@ -27,6 +38,7 @@ public class OrderActivity extends AppCompatActivity {
         tvDelivery = findViewById(R.id.tvDelivery);
         tvDiscountPrice = findViewById(R.id.tvDiscountPrice);
         tvTotalPrice = findViewById(R.id.tvTotalprice);
+        btnOrder = findViewById(R.id.btnOrderBackToHome);
     }
 
     private void getFee() {

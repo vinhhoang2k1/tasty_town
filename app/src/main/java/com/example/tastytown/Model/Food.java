@@ -3,12 +3,13 @@ package com.example.tastytown.Model;
 import java.io.Serializable;
 
 public class Food implements Serializable {
-    public String name;
-    public int price;
-    public String description;
+    private String name;
+    private int id;
+    private int price;
+    private String description;
     private String image;
     private int numberInCard;
-
+    private String type;
     public int getNumberInCard() {
         return numberInCard;
     }

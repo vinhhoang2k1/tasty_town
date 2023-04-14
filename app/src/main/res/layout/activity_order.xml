@@ -245,7 +245,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/btnOrder"
+                android:id="@+id/btnOrderBackToHome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/radius_layout"

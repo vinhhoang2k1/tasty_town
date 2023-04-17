@@ -4,7 +4,7 @@
         "name": "Food 1",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg",
-        "type": "",
+        "type": "main_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Food 2",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/carly-jayne-Lv174o7fn7Y-unsplash.jpg",
-        "type": "",
+        "type": "main_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Food 3",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/jonathan-farber-OCNqOLeCwOc-unsplash.jpg",
-        "type": "",
+        "type": "fast_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Food 4",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/sina-piryae-bBzjWthTqb8-unsplash.jpg",
-        "type": "",
+        "type": "fast_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
     {
@@ -36,7 +36,7 @@
         "name": "Food 1",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/carly-jayne-Lv174o7fn7Y-unsplash.jpg",
-        "type": "",
+        "type": "salad",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Food 5",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/sina-piryae-bBzjWthTqb8-unsplash.jpg",
-        "type": "",
+        "type": "salad",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
     {
@@ -52,7 +52,7 @@
         "name": "Food 6",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/jonathan-farber-OCNqOLeCwOc-unsplash.jpg",
-        "type": "",
+        "type": "fruit",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
     {
@@ -60,7 +60,7 @@
         "name": "Food 7",
         "price": "20",
         "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
-        "type": "",
+        "type": "fruit",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     }
 ]

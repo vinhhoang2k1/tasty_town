@@ -14,12 +14,12 @@ import com.example.tastytown.Activity.DetailFoodActivity;
 import com.example.tastytown.Model.Food;
 import com.example.tastytown.R;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class MainDisherAdaptor extends RecyclerView.Adapter<MainDisherAdaptor.ViewHolder> {
-    private ArrayList<Food> listFood;
+    private List<Food> listFood;
 
-    public MainDisherAdaptor(ArrayList<Food> listMainDisher) {
+    public MainDisherAdaptor(List<Food> listMainDisher) {
         this.listFood = listMainDisher;
     }
 
@@ -32,9 +32,9 @@ public class MainDisherAdaptor extends RecyclerView.Adapter<MainDisherAdaptor.Vi
 
     @Override
     public void onBindViewHolder(@NonNull MainDisherAdaptor.ViewHolder holder, int position) {
-        int drawResourseId = holder.itemView.getContext().getResources().getIdentifier(listFood.get(position).getImage(), "drawable", holder.itemView.getContext().getPackageName());
+//        int drawResourseId = holder.itemView.getContext().getResources().getIdentifier(listFood.get(position).getImage(), "drawable", holder.itemView.getContext().getPackageName());
         Glide.with(holder.itemView.getContext())
-                .load(drawResourseId)
+                .load(listFood.get(position).getImage())
                 .into(holder.imageV);
         holder.imageV.setOnClickListener(new View.OnClickListener() {
             @Override

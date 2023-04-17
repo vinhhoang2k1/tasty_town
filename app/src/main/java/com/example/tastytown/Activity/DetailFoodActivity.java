@@ -1,7 +1,5 @@
 package com.example.tastytown.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -9,6 +7,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.example.tastytown.Helper.ManagerCart;
@@ -81,7 +81,7 @@ public class DetailFoodActivity extends AppCompatActivity {
         foodobject = (Food) getIntent().getSerializableExtra("object");
         int drawableResourseid = this.getResources().getIdentifier(foodobject.getImage(), "drawable", this.getPackageName());
         Glide.with(this)
-                .load(drawableResourseid)
+                .load(foodobject.getImage())
                 .into(imageFoodView);
         nameFoodView.setText(foodobject.getName());
         descriptionFoodView.setText(foodobject.getDescription());

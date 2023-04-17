@@ -37,9 +37,9 @@ public class FavoriteAdaptor extends RecyclerView.Adapter<FavoriteAdaptor.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.foodNameV.setText(listFoodFavorite.get(position).getName());
         holder.priceV.setText(String.valueOf(listFoodFavorite.get(position).getPrice()));
-        int drawResourseId = holder.itemView.getContext().getResources().getIdentifier(listFoodFavorite.get(position).getImage(), "drawable", holder.itemView.getContext().getPackageName());
+//        int drawResourseId = holder.itemView.getContext().getResources().getIdentifier(listFoodFavorite.get(position).getImage(), "drawable", holder.itemView.getContext().getPackageName());
         Glide.with(holder.itemView.getContext())
-                .load(drawResourseId)
+                .load(listFoodFavorite.get(position).getImage())
                 .into(holder.imageV);
 
         holder.favoriteItemWrap.setOnClickListener(new View.OnClickListener() {

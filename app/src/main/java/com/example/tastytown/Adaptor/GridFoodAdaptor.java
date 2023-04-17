@@ -48,9 +48,8 @@ public class GridFoodAdaptor extends ArrayAdapter<Food> {
         Food food = this.objects.get(position);
         name.setText(food.getName());
         price.setText(String.valueOf(food.getPrice()));
-        int drawResourseId = row.getContext().getResources().getIdentifier(food.getImage(), "drawable", row.getContext().getPackageName());
         Glide.with(row.getContext())
-                .load(drawResourseId)
+                .load(food.getImage())
                 .into(image);
 
         itemTasty.setOnClickListener(new View.OnClickListener() {

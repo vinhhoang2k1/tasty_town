@@ -54,16 +54,23 @@ public class FirstFragment extends Fragment {
 
 
     private void getFoodList() {
-        ApiServices.apiService.getAllFood().enqueue(new Callback<Food>() {
+        ApiServices.apiService.getAllFood().enqueue(new Callback<ArrayList<Food>>() {
             @Override
-            public void onResponse(Call<Food> call, Response<Food> response) {
+            public void onResponse(Call<ArrayList<Food>> call, Response<ArrayList<Food>> response) {
                 Gson gson = new Gson();
+                ArrayList<Food> resData = response.body();
+                int length = resData.size();
+
+                for(int i=0; i<length; i++) {
+                    listMainDisher.add(resData.get(i));
+                    Log.d("res api", listMainDisher.get(i).getName());
+                }
 
                 Log.d("res api", gson.toJson(response.body()));
             }
 
             @Override
-            public void onFailure(Call<Food> call, Throwable t) {
+            public void onFailure(Call<ArrayList<Food>> call, Throwable t) {
 
             }
         });
@@ -83,6 +90,7 @@ public class FirstFragment extends Fragment {
 //        listMainDisher.add(new Food("Jollof Rice", 20, "Tasty well seasoned Nigerian jollof rice popularly referred to as the best jollof in the world. Order now and get served a hot nice meal.", "food_img_2"));
 
         getFoodList(); // get listMainDisher
+        Log.d("log onCreate", new Gson().toJson(listMainDisher));
         adapter = new MainDisherAdaptor(listMainDisher);
         recyclerMainDisher.setAdapter(adapter);
         recyclerMainDisher.setItemAnimator(new DefaultItemAnimator());

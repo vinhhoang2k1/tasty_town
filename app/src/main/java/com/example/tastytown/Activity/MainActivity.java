@@ -1,20 +1,17 @@
 package com.example.tastytown.Activity;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.example.tastytown.FifFragment;
@@ -24,7 +21,6 @@ import com.example.tastytown.R;
 import com.example.tastytown.SecondFragment;
 import com.example.tastytown.ThirdFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener {
     BottomNavigationView bottomNavigationView;
@@ -102,5 +98,7 @@ public class MainActivity extends AppCompatActivity  implements BottomNavigation
                 .load(drawableResourseid)
                 .into(headCurrentIcon);
     }
+
+
 
 }

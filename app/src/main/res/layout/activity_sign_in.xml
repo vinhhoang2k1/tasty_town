@@ -45,7 +45,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/sign_in_user_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border_edit_text"
@@ -64,7 +64,7 @@
             android:layout_marginTop="10dp">
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/sign_in_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/border_edit_text"

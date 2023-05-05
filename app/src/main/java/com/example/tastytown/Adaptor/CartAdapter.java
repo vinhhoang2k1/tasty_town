@@ -41,9 +41,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         holder.foodNameV.setText(listFoodCart.get(position).getName());
         holder.priceV.setText(String.valueOf(listFoodCart.get(position).getPrice()));
         holder.tvFoodQuantity.setText(String.valueOf(listFoodCart.get(position).getNumberInCard()));
-        int drawResourseId = holder.itemView.getContext().getResources().getIdentifier(listFoodCart.get(position).getImage(), "drawable", holder.itemView.getContext().getPackageName());
+//        int drawResourseId = holder.itemView.getContext().getResources().getIdentifier(listFoodCart.get(position).getImage(), "drawable", holder.itemView.getContext().getPackageName());
         Glide.with(holder.itemView.getContext())
-                .load(drawResourseId)
+                .load(listFoodCart.get(position).getImage())
                 .into(holder.imageV);
         holder.cartPlusBtn.setOnClickListener(new View.OnClickListener() {
             @Override

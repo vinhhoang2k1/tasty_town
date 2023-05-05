@@ -11,7 +11,7 @@
         "id": "2",
         "name": "Main salad asparagus",
         "price": "18",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/carly-jayne-Lv174o7fn7Y-unsplash.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/18.webp",
         "type": "main_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
@@ -43,7 +43,7 @@
         "id": "6",
         "name": "Salad asparagus fry",
         "price": "21",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/sina-piryae-bBzjWthTqb8-unsplash.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/19.webp",
         "type": "salad",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
@@ -155,7 +155,7 @@
         "id": "20",
         "name": "Tomato butter gotu ",
         "price": "19",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/12.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/12.webp",
         "type": "fruit",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
@@ -163,7 +163,7 @@
         "id": "21",
         "name": "Garlic orange",
         "price": "27",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/13.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/13.webp",
         "type": "fast_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
@@ -171,7 +171,7 @@
         "id": "22",
         "name": "Ba ca ba ca",
         "price": "27",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/14.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/14.webp",
         "type": "fruit",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
@@ -179,7 +179,7 @@
         "id": "23",
         "name": "House fry",
         "price": "27",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/15.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/15.webp",
         "type": "main_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
@@ -187,7 +187,7 @@
         "id": "24",
         "name": "Frog shitory",
         "price": "11",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/16.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/16.webp",
         "type": "main_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
@@ -195,7 +195,7 @@
         "id": "25",
         "name": "Mouse shusi",
         "price": "48",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/17.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/17.webp",
         "type": "main_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     }

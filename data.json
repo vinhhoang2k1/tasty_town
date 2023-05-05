@@ -112,11 +112,92 @@
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     },
     {
-        "id": "13",
-        "name": "Salad asparagus",
+        "id": "15",
+        "name": "asparagus ",
         "price": "27",
-        "image": "https://freshfood-vinh.netlify.app/assets/image/6.jpg",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/7.jpg",
         "type": "fast_food",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "16",
+        "name": "Fry asparagus",
+        "price": "27",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/8jpg",
+        "type": "fast_food",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "17",
+        "name": "kola salad ",
+        "price": "27",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/9.jpg",
+        "type": "salad",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "18",
+        "name": "butter gotu kola ",
+        "price": "25",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/10.jpg",
+        "type": "salad",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "19",
+        "name": "Tomato butter gotu ",
+        "price": "27",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/11.jpg",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "20",
+        "name": "Tomato butter gotu ",
+        "price": "19",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/12.jpg",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "21",
+        "name": "Garlic orange",
+        "price": "27",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/13.jpg",
+        "type": "fast_food",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "22",
+        "name": "Ba ca ba ca",
+        "price": "27",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/14.jpg",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "23",
+        "name": "House fry",
+        "price": "27",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/15.jpg",
+        "type": "main_food",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "24",
+        "name": "Frog shitory",
+        "price": "11",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/16.jpg",
+        "type": "main_food",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "25",
+        "name": "Mouse shusi",
+        "price": "48",
+        "image": "https://freshfood-vinh.netlify.app/assets/image/17.jpg",
+        "type": "main_food",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
     }
+    
 ]

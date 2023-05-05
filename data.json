@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "name": "Food 1",
+        "name": "Main salad egg tomato",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/anh-nguyen-kcA-c3f_3FE-unsplash.jpg",
         "type": "main_food",
@@ -9,7 +9,7 @@
     },
     {
         "id": "2",
-        "name": "Food 2",
+        "name": "Main salad asparagus",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/carly-jayne-Lv174o7fn7Y-unsplash.jpg",
         "type": "main_food",
@@ -17,7 +17,7 @@
     },
     {
         "id": "3",
-        "name": "Food 3",
+        "name": "Garlic butter gotu kola salad",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/jonathan-farber-OCNqOLeCwOc-unsplash.jpg",
         "type": "fast_food",
@@ -25,7 +25,7 @@
     },
     {
         "id": "4",
-        "name": "Food 4",
+        "name": "Tomato butter gotu kola salad",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/sina-piryae-bBzjWthTqb8-unsplash.jpg",
         "type": "fast_food",
@@ -33,7 +33,7 @@
     },
     {
         "id": "5",
-        "name": "Food 1",
+        "name": "salad butter kola",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/carly-jayne-Lv174o7fn7Y-unsplash.jpg",
         "type": "salad",
@@ -41,7 +41,7 @@
     },
     {
         "id": "6",
-        "name": "Food 5",
+        "name": "Salad asparagus fry",
         "price": "20",
         "image": "https://freshfood-vinh.netlify.app/assets/image/sina-piryae-bBzjWthTqb8-unsplash.jpg",
         "type": "salad",
@@ -62,5 +62,118 @@
         "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
         "type": "fruit",
         "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
-    }
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
+    {
+        "id": "8",
+        "name": "Food 7",
+        "price": "20",
+        "image": "http://18.141.126.187/storage/temporary/E01T0TN3Ykd7XpztfZxY6WFYBhDiYzjsxdMQdMkq.png",
+        "type": "fruit",
+        "description": "Delicious and tasty cheese burger one of tasty town’s finest, it has a record sale of 2000 orders and a rating of 4.8 since it’s introduction. no dull yourself oh!!"
+    },
 ]

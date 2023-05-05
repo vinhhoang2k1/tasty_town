@@ -27,6 +27,7 @@ public class SecondFragment extends Fragment {
     GridFoodAdaptor gridFoodAdaptor;
     ArrayList<Food> listFood = new ArrayList<>();
     ArrayList<Food> resData;
+    boolean isCalled = false;
 
     public SecondFragment(){
         // require a empty public constructor
@@ -35,24 +36,28 @@ public class SecondFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_second, container, false);
-        _gridView = rootView.findViewById(R.id.tasty_grid);
-        getListFood();
+        getListFood(rootView);
 
-        gridFoodAdaptor = new GridFoodAdaptor(getActivity(), R.layout.food_item_tastys, listFood );
-        _gridView.setAdapter(gridFoodAdaptor);
         return rootView;
     }
 
-      public void getListFood () {
+      public void getListFood (View view) {
           ApiServices.apiService.getAllFood().enqueue(new Callback<ArrayList<Food>>() {
               @Override
               public void onResponse(Call<ArrayList<Food>> call, Response<ArrayList<Food>> response) {
                   Gson gson = new Gson();
                   resData = response.body();
                   int length = resData.size();
-                  for(int i=0; i<length; i++) {
-                      listFood.add(resData.get(i));
+                  if(isCalled == false) {
+
+                      for(int i=0; i<length; i++) {
+                          listFood.add(resData.get(i));
+                      }
                   }
+                  requireActivity().runOnUiThread(() -> {
+                      isCalled = true;
+                      renderView(view);
+                  });
 
               }
 
@@ -63,4 +68,9 @@ public class SecondFragment extends Fragment {
           });
 
       }
+    public void renderView(View rootView) {
+        _gridView = rootView.findViewById(R.id.tasty_grid);
+        gridFoodAdaptor = new GridFoodAdaptor(getActivity(), R.layout.food_item_tastys, listFood );
+        _gridView.setAdapter(gridFoodAdaptor);
+    }
 }

@@ -30,9 +30,9 @@ public class FirstFragment extends Fragment {
     ArrayList<Food> listSaladFood= new ArrayList<>();
     ArrayList<Food> listFastFood = new ArrayList<>();
     ArrayList<Food> listFruit= new ArrayList<>();
-    ArrayList<Food> resData;
+    ArrayList<Food> resData = new ArrayList<>();
 
-
+    boolean isCalled = false;
 
 
     public FirstFragment(){
@@ -45,21 +45,25 @@ public class FirstFragment extends Fragment {
                 Gson gson = new Gson();
                 resData = response.body();
                 int length = resData.size();
-                for(int i=0; i<length; i++) {
-                    if(Objects.equals(resData.get(i).getType(),"main_food")) {
-                        listMainDisher.add(resData.get(i));
-                    }
-                    if(Objects.equals(resData.get(i).getType(),"fast_food")) {
-                        listFastFood.add(resData.get(i));
-                    }
-                    if(Objects.equals(resData.get(i).getType(),"salad")) {
-                        listSaladFood.add(resData.get(i));
-                    }
-                    if(Objects.equals(resData.get(i).getType(),"fruit")) {
-                        listFruit.add(resData.get(i));
+                if(isCalled == false) {
+                    for(int i=0; i<length; i++) {
+                        if(Objects.equals(resData.get(i).getType(),"main_food")) {
+                            listMainDisher.add(resData.get(i));
+                        }
+                        if(Objects.equals(resData.get(i).getType(),"fast_food")) {
+                            listFastFood.add(resData.get(i));
+                        }
+                        if(Objects.equals(resData.get(i).getType(),"salad")) {
+                            listSaladFood.add(resData.get(i));
+                        }
+                        if(Objects.equals(resData.get(i).getType(),"fruit")) {
+                            listFruit.add(resData.get(i));
+                        }
                     }
                 }
+
                 requireActivity().runOnUiThread(() -> {
+                    isCalled = true;
                     renderView(view);
                 });
 
@@ -80,7 +84,6 @@ public class FirstFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_first, container, false);
         getFoodList(rootView); // get listMainDisher
-
         return rootView;
     }
     public void renderView(View rootView) {
